@@ -25,9 +25,9 @@
 
 ## 팀원 및 주요 기능
 
-1. **박준영** - 회원 관리 및 관리자 페이지 / [PastelQ](https://github.com/PastelQ) 
-2. **박희수** - 스케쥴 관리 및 공지사항 / [NANOOS105](https://github.com/NANOOS105)
-3. **최광현** - 화상채팅 및 실시간알림 예약시스템 / [epqmfwjs](https://github.com/epqmfwjs)
+1. **최광현** - 화상채팅 및 실시간알림 예약시스템 / [epqmfwjs](https://github.com/epqmfwjs)
+2. **박준영** - 회원 관리 및 관리자 페이지 / [PastelQ](https://github.com/PastelQ) 
+3. **박희수** - 스케쥴 관리 및 공지사항 / [NANOOS105](https://github.com/NANOOS105)
 4. **이준호** - 커뮤니티 게시판 및 채팅 / [ljh0808](https://github.com/ljh0808)
 5. **한재엽** - 성적 관리 및 CI/CD 환경 구축 / [sunniesfish](https://github.com/sunniesfish)
 
