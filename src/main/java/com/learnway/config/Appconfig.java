@@ -1,3 +1,4 @@
+/*
 package com.learnway.config;
 
 import org.springframework.context.annotation.Configuration;
@@ -14,3 +15,4 @@ public class Appconfig implements WebMvcConfigurer {
 	}
 
 }
+*/

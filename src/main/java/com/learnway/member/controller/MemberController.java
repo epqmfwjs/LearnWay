@@ -17,6 +17,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+
 
 @Controller
 @RequiredArgsConstructor
@@ -37,7 +39,7 @@ public class MemberController {
     @PostMapping("/join")
     public String join(@Valid @ModelAttribute JoinDTO joinDTO,
                        BindingResult bindingResult,
-                       Model model){
+                       Model model) throws IOException {
         // 유효성 검사 진행 후 에러 메세지 전달
         if (bindingResult.hasErrors()) {
             for (FieldError error : bindingResult.getFieldErrors()) {
@@ -95,6 +97,8 @@ public class MemberController {
         } catch (IllegalArgumentException e) {
             model.addAttribute("error", e.getMessage());
             return "member/update";
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
         return "redirect:/loginOk"; // 수정 성공 시 loginOk 페이지로 리다이렉트
     }

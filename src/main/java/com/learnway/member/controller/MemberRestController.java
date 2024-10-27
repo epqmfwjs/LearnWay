@@ -16,7 +16,6 @@ import java.net.MalformedURLException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -24,7 +23,7 @@ import java.util.List;
 public class MemberRestController {
 
     private final MemberService memberService;
-    private final Path uploadPath = Paths.get("C:/uploads"); // 외부 경로
+    private final Path uploadPath = Paths.get("/uploads/"); // 외부 경로
 
     // ID 중복 체크
     @GetMapping("/check-id")
